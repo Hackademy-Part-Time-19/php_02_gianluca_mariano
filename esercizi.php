@@ -96,3 +96,15 @@ foreach($temperature as $città => $temp) {
 
 }
 
+//Esercizio 6
+
+$numeri_random = [];
+
+for ($i = 0; $i < 4;$i++) {
+    
+    $numeri_random += ["gruppo_".$i => [rand(0,101),rand(0,101),rand(0,101),rand(0,101)]];
+
+
+}
+
+var_dump($numeri_random);
