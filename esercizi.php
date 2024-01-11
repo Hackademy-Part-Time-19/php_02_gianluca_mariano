@@ -65,3 +65,34 @@ for ($i = 0; $i < 100; $i++) {
 
 
 }
+
+//Esercizio 4
+
+echo "\n";
+
+$temperature = [ "Venezia" => 16, "Bari" => 32, "Roma" => 28, "Napoli" => 30, "Milano" => 13, "Palermo" => 14, "Torino" => 24, "Lecce" => 27, "Genova" => 30, "Catania" => 11, "Cosenza" => 9, ];
+
+
+foreach($temperature as $città => $temp) {
+
+
+    if ($temp < 15) {
+
+        echo "A " . $città . " fa freddo con " . $temp . " gradi.\n";
+    
+    
+    } else if ($temp > 25) {
+    
+        echo "A " . $città . " fa molto caldo con " . $temp . " gradi.\n";
+    
+    
+    } else if ($temp >= 15) {
+    
+        echo "A " . $città . " fa caldo con "  . $temp . " gradi.\n";
+    
+    
+    }
+
+
+}
+
